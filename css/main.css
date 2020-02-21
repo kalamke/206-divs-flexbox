@@ -149,14 +149,13 @@ main {
   font-size: 1em;
   font-weight: 500;
   padding-right: 2%;
-  border-right: 1px solid #b3d4fc;
+  border-bottom: 1px solid #b3d4fc;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  width: 30%;
 }
 .div-3 {
-    border-right: none;
+    border-bottom: none;
 }
 footer a {
     text-decoration: none;
@@ -248,6 +247,26 @@ footer a:hover {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+/* ====== Breakpoints for TABLET ======== */
+
+   @media (min-width: 768px) {
+    .div-1, .div-2, .div-3 {
+        line-height: 1.5em;
+        font-size: 1em;
+        font-weight: 500;
+        padding-right: 2%;
+        border-right: 1px solid #b3d4fc;
+        border-bottom: none;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        width: 30%;  
+    }
+    .div-3 {
+        border-right: none;
+    }
+}
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
